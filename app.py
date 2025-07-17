@@ -80,7 +80,7 @@ Present results as a clean numbered list or table, readable for both patients an
 def get_resources_from_gpt(prompt):
     messages = [{"role": "user", "content": prompt}]
     try:
-        response = requests.post("http://localhost:8000/chat", json={"messages": messages})
+        response = requests.post("https://ai-resource-guide.fly.dev/chat", json={"messages": messages})
         response.raise_for_status()
         data = response.json()
         return data["choices"][0]["message"]["content"].strip()
