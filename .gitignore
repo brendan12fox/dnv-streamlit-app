@@ -1,0 +1,8 @@
+# System
+.DS_Store
+
+# Secret keys and credentials
+service_account.json
+streamlit_app/.streamlit/secrets.toml
+backend/.env
+.streamlit/secrets.toml

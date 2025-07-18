@@ -1,0 +1,22 @@
+0000000000000000000000000000000000000000 dee0b3401dba97d8ab652932fa3d464d266b061d brendanfox12 <foxbt@bc.edu> 1752790457 -0400	commit (initial): first commit
+dee0b3401dba97d8ab652932fa3d464d266b061d 0000000000000000000000000000000000000000 brendanfox12 <foxbt@bc.edu> 1752790457 -0400	Branch: renamed refs/heads/main to refs/heads/main
+dee0b3401dba97d8ab652932fa3d464d266b061d dee0b3401dba97d8ab652932fa3d464d266b061d brendanfox12 <foxbt@bc.edu> 1752790457 -0400	Branch: renamed refs/heads/main to refs/heads/main
+dee0b3401dba97d8ab652932fa3d464d266b061d 8f85f6638f1cd1ba88e28984071d746262425e8c brendanfox12 <foxbt@bc.edu> 1752791595 -0400	commit: 🔗 Connected to deployed backend
+8f85f6638f1cd1ba88e28984071d746262425e8c 25bda99ee3170cc7144641f468b42f4248af5ccd brendanfox12 <foxbt@bc.edu> 1752800373 -0400	commit: Add IP protection and authorship documentation
+25bda99ee3170cc7144641f468b42f4248af5ccd bb7db6461aa7c9c16dd1070e05cbf80e12e2cc0d brendanfox12 <foxbt@bc.edu> 1752800490 -0400	commit: Added to README Copyright info to protect IP
+bb7db6461aa7c9c16dd1070e05cbf80e12e2cc0d d27d64416977c58d5b435b1ac6e564f3af87db40 brendanfox12 <foxbt@bc.edu> 1752845820 -0400	commit: Spelling Error
+d27d64416977c58d5b435b1ac6e564f3af87db40 b95945d4d0416e8ccf3c591d8fdce09d61811840 brendanfox12 <foxbt@bc.edu> 1752846091 -0400	commit: Fix spelling error in IP summary
+b95945d4d0416e8ccf3c591d8fdce09d61811840 7322b17764cb86845cac236187b7236350157010 brendanfox12 <foxbt@bc.edu> 1752849753 -0400	commit: ✅ Added live Google Sheets logging for search + feedback
+7322b17764cb86845cac236187b7236350157010 8c31c31ee7f531d6195fb68e6d0df380455fc3b5 brendanfox12 <foxbt@bc.edu> 1752860020 -0400	commit: 🔐 Refactored auth to use Streamlit Cloud secrets
+8c31c31ee7f531d6195fb68e6d0df380455fc3b5 a788c7729429fd1a0dd4cedcfbace3a066068ff5 brendanfox12 <foxbt@bc.edu> 1752860325 -0400	commit: 📦 Added missing dependencies for Streamlit Cloud deployment
+a788c7729429fd1a0dd4cedcfbace3a066068ff5 5f72eb4fde848290fa08e719f7afe001aa00bfd7 brendanfox12 <foxbt@bc.edu> 1752860428 -0400	commit: 🧹 Cleaned up .DS_Store and updated ignore rules
+5f72eb4fde848290fa08e719f7afe001aa00bfd7 df1af396644d38a704fc9d0597d4911c48ed3b40 brendanfox12 <foxbt@bc.edu> 1752860448 -0400	pull origin main --rebase (start): checkout df1af396644d38a704fc9d0597d4911c48ed3b40
+df1af396644d38a704fc9d0597d4911c48ed3b40 b380eb7eea035364c368f052ea542236a29f956d brendanfox12 <foxbt@bc.edu> 1752860448 -0400	pull origin main --rebase (pick): 📦 Added missing dependencies for Streamlit Cloud deployment
+b380eb7eea035364c368f052ea542236a29f956d 07386f0c7a28707f3d3c8512b941ab0fdfb96916 brendanfox12 <foxbt@bc.edu> 1752860448 -0400	pull origin main --rebase (pick): 🧹 Cleaned up .DS_Store and updated ignore rules
+07386f0c7a28707f3d3c8512b941ab0fdfb96916 07386f0c7a28707f3d3c8512b941ab0fdfb96916 brendanfox12 <foxbt@bc.edu> 1752860448 -0400	pull origin main --rebase (finish): returning to refs/heads/main
+07386f0c7a28707f3d3c8512b941ab0fdfb96916 37bbfc7a251dcf58458b322bafb99fa1f63d8885 brendanfox12 <foxbt@bc.edu> 1752860552 -0400	commit: 🔐 Fix: Removed json.loads for secrets (AttrDict)
+37bbfc7a251dcf58458b322bafb99fa1f63d8885 bdcc45872df68c27346ee2ea5f50d21b0acd8d97 brendanfox12 <foxbt@bc.edu> 1752860656 -0400	commit: 🚀 Force redeploy to load updated secrets
+bdcc45872df68c27346ee2ea5f50d21b0acd8d97 cfc384e05da28b71f71e51634eec2eb68586f5b4 brendanfox12 <foxbt@bc.edu> 1752861020 -0400	commit: 🧪 Debug: Check Streamlit secrets visibility
+cfc384e05da28b71f71e51634eec2eb68586f5b4 9d2126735a3ca7c915c2e5d7ce458f69f9035c9b brendanfox12 <foxbt@bc.edu> 1752861774 -0400	commit: 🔒 Remove debug line exposing secrets
+9d2126735a3ca7c915c2e5d7ce458f69f9035c9b bdf5c10cb888fd44f455dac60f8ae4127e5a42b1 brendanfox12 <foxbt@bc.edu> 1752862921 -0400	commit: 🔒 Legal updates + app.py changes for finalized launch prep
+bdf5c10cb888fd44f455dac60f8ae4127e5a42b1 a249ff82175ed4f2a248eda80dee04f4ed08da9d brendanfox12 <foxbt@bc.edu> 1752863359 -0400	commit: 📜 Add Terms of Use and Privacy Policy for legal protection
