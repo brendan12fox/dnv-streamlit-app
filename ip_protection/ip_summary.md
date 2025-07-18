@@ -2,7 +2,7 @@
 **Author:** Brendan Fox  
 **Date:** 2025-07-17  
 **Status:** Publicly deployed via Streamlit + Fly.io  
-**Affiliation:** Independent project with informal mentorship from Dr. Snyder (UB) and Dr. Hughes (Collida Health)
+**Affiliation:** Independent project with informal mentorship from Dr. Snyder (UB) and Dr. Hughes (Kaleida Health)
 
 ## Project Overview
 AI Resource Guide is a structured GPT-4-powered Streamlit application that helps identify local social service resources using natural language inputs. It uses a secure proxy backend (Fly.io) and a structured domain-specific prompt to constrain GPT responses.
