@@ -6,6 +6,6 @@
 
 **Acknowledged Mentors:**
 - Dr. Snyder (University at Buffalo)
-- Dr. Hughes (Collida Health)
+- Dr. Hughes (Kaleida Health)
 
 No other individuals wrote or contributed code or structured prompt content.
