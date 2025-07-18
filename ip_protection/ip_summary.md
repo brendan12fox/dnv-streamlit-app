@@ -16,3 +16,14 @@ AI Resource Guide is a structured GPT-4-powered Streamlit application that helps
 - Abstract submitted to DNV 2025 with Brendan Fox as primary author
 - GitHub repo: https://github.com/brendan12fox/dnv-streamlit-app
 
+## Ownership & IP Rights
+This software and all associated content, including its codebase, prompts, design, and data handling methods, are the sole intellectual property of Brendan Fox. No contributors, institutions, or organizations have any claim to ownership or co-authorship unless separately documented and signed.
+
+## Non-Assignment Clause
+No part of this software may be sold, assigned, transferred, or re-licensed by any third party without written consent.
+
+## Commercial Use
+Commercial deployment, institutional use (e.g., by hospitals, research teams, or government bodies), or integration into external platforms is strictly prohibited unless licensed by Brendan Fox through a formal agreement.
+
+## Non-Disclosure of Methodology
+Users, viewers, or testers may not replicate the system’s architecture, prompt engineering strategy, or backend logging structure in competing systems.

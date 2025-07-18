@@ -1,3 +1,6 @@
+⚠️ Legal Notice  
+This project is publicly visible only for free hosting compatibility (e.g., Streamlit). It is **not** open source. All rights reserved. Do not copy, distribute, or reuse code, design patterns, or prompts without written permission from Brendan Fox.
+
 # © 2025 Brendan Fox. All rights reserved.
 
 # Intellectual Property Documentation – AI Resource Guide
