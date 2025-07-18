@@ -1,5 +1,8 @@
 import streamlit as st
 import requests
+import csv
+import os
+from datetime import datetime
 
 # --- PAGE CONFIG ---
 st.set_page_config(page_title="Community Resource Guide", layout="centered")
@@ -87,7 +90,34 @@ def get_resources_from_gpt(prompt):
     except Exception as e:
         raise RuntimeError(f"Failed to get response from proxy: {e}")
 
+# --- LOGGING FUNCTIONS ---
+import gspread
+from oauth2client.service_account import ServiceAccountCredentials
+
+def record_feedback(zip_code, category, resource_id, helpful, gpt_response):
+    scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
+    creds = ServiceAccountCredentials.from_json_keyfile_name("service_account.json", scope)
+    client = gspread.authorize(creds)
+
+    sheet = client.open("Feedback_Log").sheet1
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    sheet.append_row([timestamp, zip_code, category, resource_id, helpful, gpt_response])
+
+def record_search(zip_code, category):
+    scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
+    creds = ServiceAccountCredentials.from_json_keyfile_name("service_account.json", scope)
+    client = gspread.authorize(creds)
+
+    sheet = client.open("Search_Log").sheet1
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    sheet.append_row([timestamp, zip_code, category])
+
 # --- DISPLAY RESULTS ---
+if 'results' not in st.session_state:
+    st.session_state.results = None
+if 'show_feedback' not in st.session_state:
+    st.session_state.show_feedback = False
+
 if st.button("Find Resources"):
     if not zip_code.strip():
         st.error("Please enter a ZIP code.")
@@ -95,7 +125,29 @@ if st.button("Find Resources"):
         with st.spinner("Searching hyperlocal services..."):
             try:
                 prompt = build_prompt(category, zip_code)
+                record_search(zip_code, category)
                 results = get_resources_from_gpt(prompt)
-                st.markdown(f"<div class='card'>{results.replace('\\n', '<br>')}</div>", unsafe_allow_html=True)
+                st.session_state.results = results
+                st.session_state.show_feedback = True
             except Exception as e:
                 st.error(str(e))
+
+if st.session_state.results:
+    st.markdown(f"<div class='card'>{st.session_state.results}</div>", unsafe_allow_html=True)
+
+    if st.session_state.show_feedback:
+        st.markdown("**Which resource (1-5) did you use or want to rate?**")
+        resource_number = st.selectbox("Select a number", ["1", "2", "3", "4", "5"])
+
+        if resource_number:
+            col1, col2 = st.columns(2)
+            with col1:
+                if st.button("👍 Helpful"):
+                    record_feedback(zip_code, category, resource_number, True, st.session_state.results)
+                    st.success("Thanks for your feedback!")
+                    st.session_state.show_feedback = False
+            with col2:
+                if st.button("👎 Not Helpful"):
+                    record_feedback(zip_code, category, resource_number, False, st.session_state.results)
+                    st.info("Thanks for your feedback!")
+                    st.session_state.show_feedback = False
