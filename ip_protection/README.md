@@ -1,0 +1,3 @@
+# Intellectual Property Documentation – AI Resource Guide
+
+This folder provides documentation for the development, authorship, and ownership of the AI Resource Guide project by Brendan Fox...
